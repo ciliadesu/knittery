@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50F111C1249294C800C9141A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F111C0249294C800C9141A /* AppDelegate.swift */; };
+		50F111C3249294C800C9141A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F111C2249294C800C9141A /* SceneDelegate.swift */; };
+		50F111C5249294C800C9141A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F111C4249294C800C9141A /* ContentView.swift */; };
+		50F111C7249294CC00C9141A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F111C6249294CC00C9141A /* Assets.xcassets */; };
+		50F111CA249294CC00C9141A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F111C9249294CC00C9141A /* Preview Assets.xcassets */; };
+		50F111CD249294CC00C9141A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F111CB249294CC00C9141A /* LaunchScreen.storyboard */; };
+		50F111D8249294CC00C9141A /* KnitteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F111D7249294CC00C9141A /* KnitteryTests.swift */; };
+		50F111E3249294CC00C9141A /* KnitteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F111E2249294CC00C9141A /* KnitteryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50F111D4249294CC00C9141A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F111B5249294C800C9141A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F111BC249294C800C9141A;
+			remoteInfo = Knittery;
+		};
+		50F111DF249294CC00C9141A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F111B5249294C800C9141A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F111BC249294C800C9141A;
+			remoteInfo = Knittery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50F111BD249294C800C9141A /* Knittery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knittery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F111C0249294C800C9141A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50F111C2249294C800C9141A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50F111C4249294C800C9141A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50F111C6249294CC00C9141A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50F111C9249294CC00C9141A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50F111CC249294CC00C9141A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50F111CE249294CC00C9141A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F111D3249294CC00C9141A /* KnitteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnitteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F111D7249294CC00C9141A /* KnitteryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnitteryTests.swift; sourceTree = "<group>"; };
+		50F111D9249294CC00C9141A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F111DE249294CC00C9141A /* KnitteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnitteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F111E2249294CC00C9141A /* KnitteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnitteryUITests.swift; sourceTree = "<group>"; };
+		50F111E4249294CC00C9141A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50F111BA249294C800C9141A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111D0249294CC00C9141A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111DB249294CC00C9141A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50F111B4249294C800C9141A = {
+			isa = PBXGroup;
+			children = (
+				50F111BF249294C800C9141A /* Knittery */,
+				50F111D6249294CC00C9141A /* KnitteryTests */,
+				50F111E1249294CC00C9141A /* KnitteryUITests */,
+				50F111BE249294C800C9141A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50F111BE249294C800C9141A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F111BD249294C800C9141A /* Knittery.app */,
+				50F111D3249294CC00C9141A /* KnitteryTests.xctest */,
+				50F111DE249294CC00C9141A /* KnitteryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50F111BF249294C800C9141A /* Knittery */ = {
+			isa = PBXGroup;
+			children = (
+				50F111C0249294C800C9141A /* AppDelegate.swift */,
+				50F111C2249294C800C9141A /* SceneDelegate.swift */,
+				50F111C4249294C800C9141A /* ContentView.swift */,
+				50F111C6249294CC00C9141A /* Assets.xcassets */,
+				50F111CB249294CC00C9141A /* LaunchScreen.storyboard */,
+				50F111CE249294CC00C9141A /* Info.plist */,
+				50F111C8249294CC00C9141A /* Preview Content */,
+			);
+			path = Knittery;
+			sourceTree = "<group>";
+		};
+		50F111C8249294CC00C9141A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50F111C9249294CC00C9141A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50F111D6249294CC00C9141A /* KnitteryTests */ = {
+			isa = PBXGroup;
+			children = (
+				50F111D7249294CC00C9141A /* KnitteryTests.swift */,
+				50F111D9249294CC00C9141A /* Info.plist */,
+			);
+			path = KnitteryTests;
+			sourceTree = "<group>";
+		};
+		50F111E1249294CC00C9141A /* KnitteryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50F111E2249294CC00C9141A /* KnitteryUITests.swift */,
+				50F111E4249294CC00C9141A /* Info.plist */,
+			);
+			path = KnitteryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50F111BC249294C800C9141A /* Knittery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F111E7249294CC00C9141A /* Build configuration list for PBXNativeTarget "Knittery" */;
+			buildPhases = (
+				50F111B9249294C800C9141A /* Sources */,
+				50F111BA249294C800C9141A /* Frameworks */,
+				50F111BB249294C800C9141A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Knittery;
+			productName = Knittery;
+			productReference = 50F111BD249294C800C9141A /* Knittery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50F111D2249294CC00C9141A /* KnitteryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F111EA249294CC00C9141A /* Build configuration list for PBXNativeTarget "KnitteryTests" */;
+			buildPhases = (
+				50F111CF249294CC00C9141A /* Sources */,
+				50F111D0249294CC00C9141A /* Frameworks */,
+				50F111D1249294CC00C9141A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F111D5249294CC00C9141A /* PBXTargetDependency */,
+			);
+			name = KnitteryTests;
+			productName = KnitteryTests;
+			productReference = 50F111D3249294CC00C9141A /* KnitteryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50F111DD249294CC00C9141A /* KnitteryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F111ED249294CC00C9141A /* Build configuration list for PBXNativeTarget "KnitteryUITests" */;
+			buildPhases = (
+				50F111DA249294CC00C9141A /* Sources */,
+				50F111DB249294CC00C9141A /* Frameworks */,
+				50F111DC249294CC00C9141A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F111E0249294CC00C9141A /* PBXTargetDependency */,
+			);
+			name = KnitteryUITests;
+			productName = KnitteryUITests;
+			productReference = 50F111DE249294CC00C9141A /* KnitteryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50F111B5249294C800C9141A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Cecilia Valenti";
+				TargetAttributes = {
+					50F111BC249294C800C9141A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					50F111D2249294CC00C9141A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 50F111BC249294C800C9141A;
+					};
+					50F111DD249294CC00C9141A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 50F111BC249294C800C9141A;
+					};
+				};
+			};
+			buildConfigurationList = 50F111B8249294C800C9141A /* Build configuration list for PBXProject "Knittery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50F111B4249294C800C9141A;
+			productRefGroup = 50F111BE249294C800C9141A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50F111BC249294C800C9141A /* Knittery */,
+				50F111D2249294CC00C9141A /* KnitteryTests */,
+				50F111DD249294CC00C9141A /* KnitteryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50F111BB249294C800C9141A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F111CD249294CC00C9141A /* LaunchScreen.storyboard in Resources */,
+				50F111CA249294CC00C9141A /* Preview Assets.xcassets in Resources */,
+				50F111C7249294CC00C9141A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111D1249294CC00C9141A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111DC249294CC00C9141A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50F111B9249294C800C9141A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F111C1249294C800C9141A /* AppDelegate.swift in Sources */,
+				50F111C3249294C800C9141A /* SceneDelegate.swift in Sources */,
+				50F111C5249294C800C9141A /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111CF249294CC00C9141A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F111D8249294CC00C9141A /* KnitteryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F111DA249294CC00C9141A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F111E3249294CC00C9141A /* KnitteryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50F111D5249294CC00C9141A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F111BC249294C800C9141A /* Knittery */;
+			targetProxy = 50F111D4249294CC00C9141A /* PBXContainerItemProxy */;
+		};
+		50F111E0249294CC00C9141A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F111BC249294C800C9141A /* Knittery */;
+			targetProxy = 50F111DF249294CC00C9141A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50F111CB249294CC00C9141A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F111CC249294CC00C9141A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50F111E5249294CC00C9141A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50F111E6249294CC00C9141A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50F111E8249294CC00C9141A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Knittery/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Knittery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.Knittery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50F111E9249294CC00C9141A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Knittery/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Knittery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.Knittery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50F111EB249294CC00C9141A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KnitteryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.KnitteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knittery.app/Knittery";
+			};
+			name = Debug;
+		};
+		50F111EC249294CC00C9141A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KnitteryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.KnitteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knittery.app/Knittery";
+			};
+			name = Release;
+		};
+		50F111EE249294CC00C9141A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KnitteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.KnitteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Knittery;
+			};
+			name = Debug;
+		};
+		50F111EF249294CC00C9141A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KnitteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valenti.KnitteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Knittery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50F111B8249294C800C9141A /* Build configuration list for PBXProject "Knittery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F111E5249294CC00C9141A /* Debug */,
+				50F111E6249294CC00C9141A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F111E7249294CC00C9141A /* Build configuration list for PBXNativeTarget "Knittery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F111E8249294CC00C9141A /* Debug */,
+				50F111E9249294CC00C9141A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F111EA249294CC00C9141A /* Build configuration list for PBXNativeTarget "KnitteryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F111EB249294CC00C9141A /* Debug */,
+				50F111EC249294CC00C9141A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F111ED249294CC00C9141A /* Build configuration list for PBXNativeTarget "KnitteryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F111EE249294CC00C9141A /* Debug */,
+				50F111EF249294CC00C9141A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50F111B5249294C800C9141A /* Project object */;
+}
