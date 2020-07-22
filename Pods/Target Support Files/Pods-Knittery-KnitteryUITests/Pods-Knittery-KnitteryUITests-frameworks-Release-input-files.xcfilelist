@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework

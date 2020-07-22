@@ -1,0 +1,20 @@
+PODS:
+  - OAuthSwift (2.0.0)
+  - SwiftKeychainWrapper (3.4.0)
+
+DEPENDENCIES:
+  - OAuthSwift (~> 2.0.0)
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  trunk:
+    - OAuthSwift
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+
+PODFILE CHECKSUM: cc66890e8fc98d825e30a4383d57d5b8a22a916a
+
+COCOAPODS: 1.9.3

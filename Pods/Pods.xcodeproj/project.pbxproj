@@ -1,0 +1,1267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006DD7B84DF4831DD62D5B5579921FE7 /* Collection+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A2308F3D0CAA58688B2107FEB12D7 /* Collection+OAuthSwift.swift */; };
+		01E98AD1F6B57C7067BC7CDDEEB5C7EF /* Pods-KnitteryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A744E3E4578275791A8B074E02EA98 /* Pods-KnitteryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0419863C4246A43DC6EED71845AB11D3 /* OAuthSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6A3C1B150B85C2B262D2DDAE28B5DF /* OAuthSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1E9D786CA1040C50244F3427482C2C /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1850A62ED87D9A503B93789D7A2032E4 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D72FD00D1FF38E593EE989D1ABC2539 /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE2B10AE7D42C1BC3836948FC6F74A /* OAuthSwiftCredential.swift */; };
+		1629C4B5726835A176893197171DD30C /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7438623EB7973F3DC2AE752ECECB903 /* OAuthSwiftURLHandlerType.swift */; };
+		199BB0F09E8F2A984D968A701CD8601C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D3F243568AB05D60D88F5052764A38 /* SwiftKeychainWrapper-dummy.m */; };
+		28985E0EB67584AE9C0FE79F7C85ED01 /* NSError+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A49848D36DB1E2C3F6041056AD81FC /* NSError+OAuthSwift.swift */; };
+		2D5B4F161C175508C1269966646A7F97 /* NotificationCenter+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323F87CF3865B6A5FEEE018560CBF66 /* NotificationCenter+OAuthSwift.swift */; };
+		2DC5D4C745D8F3FA17B86F6483C1892C /* OAuthSwiftResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658417BC167E7B221C961EF09F9283C6 /* OAuthSwiftResponse.swift */; };
+		35C7EB60E66E2814886504B822190484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		36385D88156CC42B11548DB3CE618D5A /* UIApplication+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7471A8DF033AEE584B0A6EB2C740EE5 /* UIApplication+OAuthSwift.swift */; };
+		3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA1799802C595C96284F6C3789B430 /* KeychainWrapper.swift */; };
+		3AF224E4A892995CB9566D6C9D0FE049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3C90681F84EC1CE693CB204A6A98B1E5 /* Pods-Knittery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38CB059415E08B0843F025717F479DF /* Pods-Knittery-dummy.m */; };
+		3D6F005E51F5821850FE52C0A6A7DA1E /* Pods-Knittery-KnitteryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 997B20D86C1E512402783D93E3CBF52D /* Pods-Knittery-KnitteryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4211E036D9D65BA306BDBA12C48CDE97 /* Pods-Knittery-KnitteryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C8F096F1918647DDDE592CD991DE6 /* Pods-Knittery-KnitteryUITests-dummy.m */; };
+		48771968DB2B53BC5096BEFC1F416B7F /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01941757E7794CCD0573969C8B896113 /* OAuthSwiftHTTPRequest.swift */; };
+		4F8EDBDDBBB9C640ABB64A8947FB24F8 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAADC85A974315F7AF8D4D4D2ED394D /* URLConvertible.swift */; };
+		51379581E67362A18BF16CEDADB8C956 /* OAuthSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53FE52544C23676D390DA5DF806C70 /* OAuthSwift-dummy.m */; };
+		5566E0822D5B7688097407A43A0CE2E8 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5FCDA15BF195A27B9EC2655301DEF /* SHA1.swift */; };
+		700ED1A5C0A766B293223FD3818AFFBA /* URL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976F2093592E24771455CA0299A48FB /* URL+OAuthSwift.swift */; };
+		731BABF8341920C565BDF9D58283C500 /* OAuthSwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C2FD5FE43B07EF0A622F161C0017F /* OAuthSwiftError.swift */; };
+		79F9E680847862CAA7AD498865D66E6D /* Int+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5789CD5BA9D37E2C2421483CDDF2F /* Int+OAuthSwift.swift */; };
+		7BDEA58982AE38EC64F549D981FD45E6 /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AC84B3BDCC01AD783612DF5F3D7DEF /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8933A8EDCFA4D951B115961E724A16 /* KeychainItemAccessibility.swift */; };
+		86AC21E47BE8FC247FE1FEE71AA17929 /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B649F0CFF6F28C41E04DE28B235A219 /* String+OAuthSwift.swift */; };
+		924BF391A230C4F9F1983C6515505F40 /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76524AC41B08B531BEFE29714E79EEB /* Dictionary+OAuthSwift.swift */; };
+		9385149B9A22B987F4FC8DB1C6860652 /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E10404B7336FCE2C6F014222259C2C5 /* OAuth1Swift.swift */; };
+		A81EB5AE5FD0154B8F37753A790B063E /* Pods-KnitteryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B73E2E845274EA56CED3CD373C6E03B6 /* Pods-KnitteryTests-dummy.m */; };
+		C3AE2E522DA7C7EC0AE89A36CF3D5D26 /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A7890060EBECF292A0264167DEF8F /* OAuthWebViewController.swift */; };
+		C637809D777E60C7C968006DB6813DC8 /* OAuthSwiftMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE3A9DABC6543ABB9CD8A362BC221E /* OAuthSwiftMultipartData.swift */; };
+		D142D105A2B254B0CB7166A31FDF18F3 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B8763B09B92C1353A21FAD82DD18E /* OAuthSwiftClient.swift */; };
+		D33D6D0305E5BB03D60948D963ABC2C5 /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70230771CD1AF238DDE1A7D349D3942C /* OAuth2Swift.swift */; };
+		D6D4FB8DCEBEED7B53EA9DC30CE50A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DE8334776A8AF143A6EC8BBC663A7E5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E52797125AD2E2D9BA35438ECBF96D8E /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7DED152BDA9727B6A5E7C87B3AE8F8 /* HMAC.swift */; };
+		EFA90FA94C23EEAF85DCA6E7B8492C7E /* OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB51EA6E564A351997C7264E3452CB /* OAuthSwift.swift */; };
+		F659137D17D1E461A59EB7340D16BA82 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2976FC8B0C893A2C759AEF8D03C2EC6 /* Utils.swift */; };
+		FA7441A79B922120915A80004DC1B1E9 /* Pods-Knittery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAE1DB71F49D26B5604656577ED1C77 /* Pods-Knittery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB67E162F70E22C08F56C4BCC20CAD91 /* Data+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E43BFF4FF74236799FB16A12788BCD /* Data+OAuthSwift.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		003F7EEB3356B74A0BFAB3BD7F836AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C91E7D1D6000FAB10BA1FA4D7DC1553;
+			remoteInfo = OAuthSwift;
+		};
+		4E8623786FE0C0E6BB924554B8F2BBA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF903DF43E111410ECA0C288D36FA21A;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+		BF89FF7E9B502C012DB93E88576113A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C91E7D1D6000FAB10BA1FA4D7DC1553;
+			remoteInfo = OAuthSwift;
+		};
+		C323BDF0737F654E6B1D6AA4B770338D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37484D3D699613823E9A5FF91C2F6740;
+			remoteInfo = "Pods-Knittery";
+		};
+		C8B694767292F0C7262BDC3E3A64AABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF903DF43E111410ECA0C288D36FA21A;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01941757E7794CCD0573969C8B896113 /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftHTTPRequest.swift; path = Sources/OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		0349A5628A599DF200281AC1AB3A5D36 /* Pods-KnitteryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KnitteryTests.modulemap"; sourceTree = "<group>"; };
+		0460627BACEAF7372BD8FBE48F7E510A /* SwiftKeychainWrapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftKeychainWrapper-Info.plist"; sourceTree = "<group>"; };
+		06EB389B6B43092EBB1F838680A97496 /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		071C8F096F1918647DDDE592CD991DE6 /* Pods-Knittery-KnitteryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Knittery-KnitteryUITests-dummy.m"; sourceTree = "<group>"; };
+		076A2308F3D0CAA58688B2107FEB12D7 /* Collection+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+OAuthSwift.swift"; path = "Sources/Collection+OAuthSwift.swift"; sourceTree = "<group>"; };
+		0976F2093592E24771455CA0299A48FB /* URL+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+OAuthSwift.swift"; path = "Sources/URL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		0B96979BD7B0243B2BF25879C846F440 /* Pods-Knittery-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Knittery-Info.plist"; sourceTree = "<group>"; };
+		10C83BC0E01852A6B369E39BBE224962 /* Pods-KnitteryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnitteryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1850A62ED87D9A503B93789D7A2032E4 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		25D3F243568AB05D60D88F5052764A38 /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		277D751916429219ECF7C46A2ECB0CBC /* OAuthSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.debug.xcconfig; sourceTree = "<group>"; };
+		2AB72795D93EBBD864DE148F531B85DC /* OAuthSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.release.xcconfig; sourceTree = "<group>"; };
+		2E515B37E55C96323B7B8C3660D7F877 /* Pods-Knittery-KnitteryUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Knittery-KnitteryUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2EE18BE146C70C29020F7C23189F63D3 /* Pods-Knittery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Knittery.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B649F0CFF6F28C41E04DE28B235A219 /* String+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+OAuthSwift.swift"; path = "Sources/String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		3EAF72FEB1F8B5EBD734DCBFBB16D4AB /* Pods_Knittery_KnitteryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Knittery_KnitteryUITests.framework; path = "Pods-Knittery-KnitteryUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBFD585D7A141616CE0875E46E361E0 /* Pods-Knittery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Knittery-acknowledgements.plist"; sourceTree = "<group>"; };
+		411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OAuthSwift.framework; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9AF71BA8BB0837AEAA258241CEE5F3 /* Pods-Knittery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Knittery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E10404B7336FCE2C6F014222259C2C5 /* OAuth1Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth1Swift.swift; path = Sources/OAuth1Swift.swift; sourceTree = "<group>"; };
+		5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		534B8763B09B92C1353A21FAD82DD18E /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftClient.swift; path = Sources/OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		559C2FD5FE43B07EF0A622F161C0017F /* OAuthSwiftError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftError.swift; path = Sources/OAuthSwiftError.swift; sourceTree = "<group>"; };
+		55A49848D36DB1E2C3F6041056AD81FC /* NSError+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+OAuthSwift.swift"; path = "Sources/NSError+OAuthSwift.swift"; sourceTree = "<group>"; };
+		56BE2B10AE7D42C1BC3836948FC6F74A /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftCredential.swift; path = Sources/OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		6323F87CF3865B6A5FEEE018560CBF66 /* NotificationCenter+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+OAuthSwift.swift"; path = "Sources/NotificationCenter+OAuthSwift.swift"; sourceTree = "<group>"; };
+		658417BC167E7B221C961EF09F9283C6 /* OAuthSwiftResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftResponse.swift; path = Sources/OAuthSwiftResponse.swift; sourceTree = "<group>"; };
+		69EB51EA6E564A351997C7264E3452CB /* OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwift.swift; path = Sources/OAuthSwift.swift; sourceTree = "<group>"; };
+		6ECA3F46B2DF0114C279A7F2E858359C /* Pods-Knittery-KnitteryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Knittery-KnitteryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70230771CD1AF238DDE1A7D349D3942C /* OAuth2Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Swift.swift; path = Sources/OAuth2Swift.swift; sourceTree = "<group>"; };
+		716C15842C35EB3440F003F961209F96 /* Pods_Knittery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Knittery.framework; path = "Pods-Knittery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A5789CD5BA9D37E2C2421483CDDF2F /* Int+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+OAuthSwift.swift"; path = "Sources/Int+OAuthSwift.swift"; sourceTree = "<group>"; };
+		73B5B48053071086193B970925F20E02 /* Pods-Knittery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Knittery.modulemap"; sourceTree = "<group>"; };
+		7ED33DDE3CC050C2F5C6452AEA9905B0 /* Pods_KnitteryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KnitteryTests.framework; path = "Pods-KnitteryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8626172E3E2559C33A90B10874250E4D /* Pods-KnitteryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnitteryTests.release.xcconfig"; sourceTree = "<group>"; };
+		882F50F8DCEAB5F47F937ADD67AE9CA1 /* Pods-Knittery-KnitteryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Knittery-KnitteryUITests.modulemap"; sourceTree = "<group>"; };
+		89E43BFF4FF74236799FB16A12788BCD /* Data+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+OAuthSwift.swift"; path = "Sources/Data+OAuthSwift.swift"; sourceTree = "<group>"; };
+		8FAADC85A974315F7AF8D4D4D2ED394D /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = Sources/URLConvertible.swift; sourceTree = "<group>"; };
+		954A7890060EBECF292A0264167DEF8F /* OAuthWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthWebViewController.swift; path = Sources/OAuthWebViewController.swift; sourceTree = "<group>"; };
+		97FA1799802C595C96284F6C3789B430 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		9864D95A662A354A08AE5C8D8373F786 /* Pods-Knittery-KnitteryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Knittery-KnitteryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		997B20D86C1E512402783D93E3CBF52D /* Pods-Knittery-KnitteryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Knittery-KnitteryUITests-umbrella.h"; sourceTree = "<group>"; };
+		9CCD87DD57D3372D3E3C32BF9D2F14D9 /* Pods-Knittery-KnitteryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Knittery-KnitteryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F7DED152BDA9727B6A5E7C87B3AE8F8 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/HMAC.swift; sourceTree = "<group>"; };
+		A15C30194E779B83BA75E071C25AD755 /* Pods-KnitteryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnitteryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A38CB059415E08B0843F025717F479DF /* Pods-Knittery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Knittery-dummy.m"; sourceTree = "<group>"; };
+		A9A5FCDA15BF195A27B9EC2655301DEF /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/SHA1.swift; sourceTree = "<group>"; };
+		AE53FE52544C23676D390DA5DF806C70 /* OAuthSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuthSwift-dummy.m"; sourceTree = "<group>"; };
+		AEEE7D62D631114EF8B4306875B4019C /* OAuthSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OAuthSwift.modulemap; sourceTree = "<group>"; };
+		AFAB40F6847644B725EF808DFE65600C /* Pods-Knittery-KnitteryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Knittery-KnitteryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4921CB63C66965E7A0B0007FD1A041D /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		B73E2E845274EA56CED3CD373C6E03B6 /* Pods-KnitteryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnitteryTests-dummy.m"; sourceTree = "<group>"; };
+		BC0B29B651AB9B4731F6BFBC299D2A7D /* SwiftKeychainWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.debug.xcconfig; sourceTree = "<group>"; };
+		BD389A71A0D529728644CF845C4FFAD8 /* OAuthSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-prefix.pch"; sourceTree = "<group>"; };
+		BEF056037035DFCED1F5FD1F9DBC9D7E /* Pods-Knittery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Knittery-frameworks.sh"; sourceTree = "<group>"; };
+		C547731E5FEF1ED5287A7F935A63B2A8 /* Pods-KnitteryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnitteryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7471A8DF033AEE584B0A6EB2C740EE5 /* UIApplication+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+OAuthSwift.swift"; path = "Sources/UIApplication+OAuthSwift.swift"; sourceTree = "<group>"; };
+		C76524AC41B08B531BEFE29714E79EEB /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+OAuthSwift.swift"; path = "Sources/Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		CCAE3A9DABC6543ABB9CD8A362BC221E /* OAuthSwiftMultipartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftMultipartData.swift; path = Sources/OAuthSwiftMultipartData.swift; sourceTree = "<group>"; };
+		CDAE1DB71F49D26B5604656577ED1C77 /* Pods-Knittery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Knittery-umbrella.h"; sourceTree = "<group>"; };
+		D1A744E3E4578275791A8B074E02EA98 /* Pods-KnitteryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnitteryTests-umbrella.h"; sourceTree = "<group>"; };
+		D7438623EB7973F3DC2AE752ECECB903 /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerType.swift; path = Sources/OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
+		D79CA1DB340766BFA10F17558C19C769 /* SwiftKeychainWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.release.xcconfig; sourceTree = "<group>"; };
+		DD6A3C1B150B85C2B262D2DDAE28B5DF /* OAuthSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-umbrella.h"; sourceTree = "<group>"; };
+		E56ED221AB77C2337DD45A31B4E19919 /* Pods-KnitteryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnitteryTests-Info.plist"; sourceTree = "<group>"; };
+		EBEA5D96C6124CB1A2A888F38462CA98 /* Pods-Knittery-KnitteryUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Knittery-KnitteryUITests-Info.plist"; sourceTree = "<group>"; };
+		ED8933A8EDCFA4D951B115961E724A16 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = SwiftKeychainWrapper/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		F2976FC8B0C893A2C759AEF8D03C2EC6 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		F2E34861D03E44B87F9D97175C8F9034 /* OAuthSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OAuthSwift-Info.plist"; sourceTree = "<group>"; };
+		F76105706EDA568C60C8CDF987E912CC /* Pods-Knittery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Knittery.release.xcconfig"; sourceTree = "<group>"; };
+		F7AC84B3BDCC01AD783612DF5F3D7DEF /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A8DC9D5BC75A8EEB8B72000AAA3FB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF224E4A892995CB9566D6C9D0FE049 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2405DEE0608E5FBE364B03BC8F1D4010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199BB0F09E8F2A984D968A701CD8601C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37DF6FE4412A0C3CD0A127B3E392A447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8334776A8AF143A6EC8BBC663A7E5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927C033879DD5ACA72842A20F9C15179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D4FB8DCEBEED7B53EA9DC30CE50A56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE32F0F2A099860CD3EA3E14F13E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C7EB60E66E2814886504B822190484 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB9FF7527A4E626F75265BE1D384A8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEEE7D62D631114EF8B4306875B4019C /* OAuthSwift.modulemap */,
+				AE53FE52544C23676D390DA5DF806C70 /* OAuthSwift-dummy.m */,
+				F2E34861D03E44B87F9D97175C8F9034 /* OAuthSwift-Info.plist */,
+				BD389A71A0D529728644CF845C4FFAD8 /* OAuthSwift-prefix.pch */,
+				DD6A3C1B150B85C2B262D2DDAE28B5DF /* OAuthSwift-umbrella.h */,
+				277D751916429219ECF7C46A2ECB0CBC /* OAuthSwift.debug.xcconfig */,
+				2AB72795D93EBBD864DE148F531B85DC /* OAuthSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OAuthSwift";
+			sourceTree = "<group>";
+		};
+		1FAB47E5075DE3ED33CF0C6A47EE6460 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				ED8933A8EDCFA4D951B115961E724A16 /* KeychainItemAccessibility.swift */,
+				97FA1799802C595C96284F6C3789B430 /* KeychainWrapper.swift */,
+				F7AC84B3BDCC01AD783612DF5F3D7DEF /* SwiftKeychainWrapper.h */,
+				BA01973AA6782802592EF9F13D0C4DDB /* Support Files */,
+			);
+			name = SwiftKeychainWrapper;
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		293CD6FC119472052FEA87B4052636E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift.framework */,
+				716C15842C35EB3440F003F961209F96 /* Pods_Knittery.framework */,
+				3EAF72FEB1F8B5EBD734DCBFBB16D4AB /* Pods_Knittery_KnitteryUITests.framework */,
+				7ED33DDE3CC050C2F5C6452AEA9905B0 /* Pods_KnitteryTests.framework */,
+				5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F0F9E086EC6D787A616B020379BDF74 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				076A2308F3D0CAA58688B2107FEB12D7 /* Collection+OAuthSwift.swift */,
+				89E43BFF4FF74236799FB16A12788BCD /* Data+OAuthSwift.swift */,
+				C76524AC41B08B531BEFE29714E79EEB /* Dictionary+OAuthSwift.swift */,
+				9F7DED152BDA9727B6A5E7C87B3AE8F8 /* HMAC.swift */,
+				72A5789CD5BA9D37E2C2421483CDDF2F /* Int+OAuthSwift.swift */,
+				6323F87CF3865B6A5FEEE018560CBF66 /* NotificationCenter+OAuthSwift.swift */,
+				55A49848D36DB1E2C3F6041056AD81FC /* NSError+OAuthSwift.swift */,
+				4E10404B7336FCE2C6F014222259C2C5 /* OAuth1Swift.swift */,
+				70230771CD1AF238DDE1A7D349D3942C /* OAuth2Swift.swift */,
+				69EB51EA6E564A351997C7264E3452CB /* OAuthSwift.swift */,
+				534B8763B09B92C1353A21FAD82DD18E /* OAuthSwiftClient.swift */,
+				56BE2B10AE7D42C1BC3836948FC6F74A /* OAuthSwiftCredential.swift */,
+				559C2FD5FE43B07EF0A622F161C0017F /* OAuthSwiftError.swift */,
+				01941757E7794CCD0573969C8B896113 /* OAuthSwiftHTTPRequest.swift */,
+				CCAE3A9DABC6543ABB9CD8A362BC221E /* OAuthSwiftMultipartData.swift */,
+				658417BC167E7B221C961EF09F9283C6 /* OAuthSwiftResponse.swift */,
+				D7438623EB7973F3DC2AE752ECECB903 /* OAuthSwiftURLHandlerType.swift */,
+				954A7890060EBECF292A0264167DEF8F /* OAuthWebViewController.swift */,
+				A9A5FCDA15BF195A27B9EC2655301DEF /* SHA1.swift */,
+				3B649F0CFF6F28C41E04DE28B235A219 /* String+OAuthSwift.swift */,
+				C7471A8DF033AEE584B0A6EB2C740EE5 /* UIApplication+OAuthSwift.swift */,
+				0976F2093592E24771455CA0299A48FB /* URL+OAuthSwift.swift */,
+				8FAADC85A974315F7AF8D4D4D2ED394D /* URLConvertible.swift */,
+				F2976FC8B0C893A2C759AEF8D03C2EC6 /* Utils.swift */,
+				0EB9FF7527A4E626F75265BE1D384A8D /* Support Files */,
+			);
+			name = OAuthSwift;
+			path = OAuthSwift;
+			sourceTree = "<group>";
+		};
+		55B99A80C5DC73C49828FE97FA426784 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB42320BC08C739AC7F0A7E8CAD9B1D2 /* Pods-Knittery */,
+				D9BDD3D71D5DCDA78D2C0492859234EA /* Pods-Knittery-KnitteryUITests */,
+				9EFA990B53785ABC67792F8CC5F90300 /* Pods-KnitteryTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9EFA990B53785ABC67792F8CC5F90300 /* Pods-KnitteryTests */ = {
+			isa = PBXGroup;
+			children = (
+				0349A5628A599DF200281AC1AB3A5D36 /* Pods-KnitteryTests.modulemap */,
+				A15C30194E779B83BA75E071C25AD755 /* Pods-KnitteryTests-acknowledgements.markdown */,
+				C547731E5FEF1ED5287A7F935A63B2A8 /* Pods-KnitteryTests-acknowledgements.plist */,
+				B73E2E845274EA56CED3CD373C6E03B6 /* Pods-KnitteryTests-dummy.m */,
+				E56ED221AB77C2337DD45A31B4E19919 /* Pods-KnitteryTests-Info.plist */,
+				D1A744E3E4578275791A8B074E02EA98 /* Pods-KnitteryTests-umbrella.h */,
+				10C83BC0E01852A6B369E39BBE224962 /* Pods-KnitteryTests.debug.xcconfig */,
+				8626172E3E2559C33A90B10874250E4D /* Pods-KnitteryTests.release.xcconfig */,
+			);
+			name = "Pods-KnitteryTests";
+			path = "Target Support Files/Pods-KnitteryTests";
+			sourceTree = "<group>";
+		};
+		BA01973AA6782802592EF9F13D0C4DDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06EB389B6B43092EBB1F838680A97496 /* SwiftKeychainWrapper.modulemap */,
+				25D3F243568AB05D60D88F5052764A38 /* SwiftKeychainWrapper-dummy.m */,
+				0460627BACEAF7372BD8FBE48F7E510A /* SwiftKeychainWrapper-Info.plist */,
+				B4921CB63C66965E7A0B0007FD1A041D /* SwiftKeychainWrapper-prefix.pch */,
+				1850A62ED87D9A503B93789D7A2032E4 /* SwiftKeychainWrapper-umbrella.h */,
+				BC0B29B651AB9B4731F6BFBC299D2A7D /* SwiftKeychainWrapper.debug.xcconfig */,
+				D79CA1DB340766BFA10F17558C19C769 /* SwiftKeychainWrapper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		BB42320BC08C739AC7F0A7E8CAD9B1D2 /* Pods-Knittery */ = {
+			isa = PBXGroup;
+			children = (
+				73B5B48053071086193B970925F20E02 /* Pods-Knittery.modulemap */,
+				4C9AF71BA8BB0837AEAA258241CEE5F3 /* Pods-Knittery-acknowledgements.markdown */,
+				3EBFD585D7A141616CE0875E46E361E0 /* Pods-Knittery-acknowledgements.plist */,
+				A38CB059415E08B0843F025717F479DF /* Pods-Knittery-dummy.m */,
+				BEF056037035DFCED1F5FD1F9DBC9D7E /* Pods-Knittery-frameworks.sh */,
+				0B96979BD7B0243B2BF25879C846F440 /* Pods-Knittery-Info.plist */,
+				CDAE1DB71F49D26B5604656577ED1C77 /* Pods-Knittery-umbrella.h */,
+				2EE18BE146C70C29020F7C23189F63D3 /* Pods-Knittery.debug.xcconfig */,
+				F76105706EDA568C60C8CDF987E912CC /* Pods-Knittery.release.xcconfig */,
+			);
+			name = "Pods-Knittery";
+			path = "Target Support Files/Pods-Knittery";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DDDDB1566CEE771C2A274E8E1A42CF64 /* Pods */,
+				293CD6FC119472052FEA87B4052636E9 /* Products */,
+				55B99A80C5DC73C49828FE97FA426784 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BDD3D71D5DCDA78D2C0492859234EA /* Pods-Knittery-KnitteryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				882F50F8DCEAB5F47F937ADD67AE9CA1 /* Pods-Knittery-KnitteryUITests.modulemap */,
+				9CCD87DD57D3372D3E3C32BF9D2F14D9 /* Pods-Knittery-KnitteryUITests-acknowledgements.markdown */,
+				6ECA3F46B2DF0114C279A7F2E858359C /* Pods-Knittery-KnitteryUITests-acknowledgements.plist */,
+				071C8F096F1918647DDDE592CD991DE6 /* Pods-Knittery-KnitteryUITests-dummy.m */,
+				2E515B37E55C96323B7B8C3660D7F877 /* Pods-Knittery-KnitteryUITests-frameworks.sh */,
+				EBEA5D96C6124CB1A2A888F38462CA98 /* Pods-Knittery-KnitteryUITests-Info.plist */,
+				997B20D86C1E512402783D93E3CBF52D /* Pods-Knittery-KnitteryUITests-umbrella.h */,
+				AFAB40F6847644B725EF808DFE65600C /* Pods-Knittery-KnitteryUITests.debug.xcconfig */,
+				9864D95A662A354A08AE5C8D8373F786 /* Pods-Knittery-KnitteryUITests.release.xcconfig */,
+			);
+			name = "Pods-Knittery-KnitteryUITests";
+			path = "Target Support Files/Pods-Knittery-KnitteryUITests";
+			sourceTree = "<group>";
+		};
+		DDDDB1566CEE771C2A274E8E1A42CF64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F9E086EC6D787A616B020379BDF74 /* OAuthSwift */,
+				1FAB47E5075DE3ED33CF0C6A47EE6460 /* SwiftKeychainWrapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C61052E4BFB1A6AA64027981FD0D311 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E98AD1F6B57C7067BC7CDDEEB5C7EF /* Pods-KnitteryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20848372F0B56A784B975FF28596650F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6F005E51F5821850FE52C0A6A7DA1E /* Pods-Knittery-KnitteryUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		573DC95736D75171F49BA45512149F00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7441A79B922120915A80004DC1B1E9 /* Pods-Knittery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C11228AE98A34BAC0F29F940C5FEB72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0419863C4246A43DC6EED71845AB11D3 /* OAuthSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46D83F0CD00CB6C581A15FACBBDB57E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1E9D786CA1040C50244F3427482C2C /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				7BDEA58982AE38EC64F549D981FD45E6 /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		041773ADFE5EE818B83A7BF61242A868 /* Pods-Knittery-KnitteryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD68510A282BCE0A280E09754081B80 /* Build configuration list for PBXNativeTarget "Pods-Knittery-KnitteryUITests" */;
+			buildPhases = (
+				20848372F0B56A784B975FF28596650F /* Headers */,
+				06712752D2F0601570A197EAB8C51B0B /* Sources */,
+				927C033879DD5ACA72842A20F9C15179 /* Frameworks */,
+				6A8431CE909F878A5BE1F83091DB7A4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726108D1A2A11690C0768F472F73920C /* PBXTargetDependency */,
+				C006CCF06074654B74BEC2853A230A44 /* PBXTargetDependency */,
+			);
+			name = "Pods-Knittery-KnitteryUITests";
+			productName = "Pods-Knittery-KnitteryUITests";
+			productReference = 3EAF72FEB1F8B5EBD734DCBFBB16D4AB /* Pods_Knittery_KnitteryUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F3F50085D1C5D026205B9299E1FB95C /* Pods-KnitteryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB33B32438A337F866288E9182C84945 /* Build configuration list for PBXNativeTarget "Pods-KnitteryTests" */;
+			buildPhases = (
+				0C61052E4BFB1A6AA64027981FD0D311 /* Headers */,
+				7465C64771AFE0E92C3C7F1BB37F1620 /* Sources */,
+				2405DEE0608E5FBE364B03BC8F1D4010 /* Frameworks */,
+				2B77855A23E622DC2B2D59A83EDA6F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CD314CB07E556639D2F0594F128360E /* PBXTargetDependency */,
+			);
+			name = "Pods-KnitteryTests";
+			productName = "Pods-KnitteryTests";
+			productReference = 7ED33DDE3CC050C2F5C6452AEA9905B0 /* Pods_KnitteryTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37484D3D699613823E9A5FF91C2F6740 /* Pods-Knittery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9521A209149E5ED8654825189CE940DD /* Build configuration list for PBXNativeTarget "Pods-Knittery" */;
+			buildPhases = (
+				573DC95736D75171F49BA45512149F00 /* Headers */,
+				61C25F07B2E5878509D5342F177C2D09 /* Sources */,
+				1A8DC9D5BC75A8EEB8B72000AAA3FB86 /* Frameworks */,
+				CA93B9B71C9A52A580873205EECA4C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE447690FBA0081FFB95344F02FC7A2E /* PBXTargetDependency */,
+				65F9BB4A2710821C4191669AB60255CF /* PBXTargetDependency */,
+			);
+			name = "Pods-Knittery";
+			productName = "Pods-Knittery";
+			productReference = 716C15842C35EB3440F003F961209F96 /* Pods_Knittery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984E9E4ACADC834F85B8DA4ABE20DC4D /* Build configuration list for PBXNativeTarget "OAuthSwift" */;
+			buildPhases = (
+				7C11228AE98A34BAC0F29F940C5FEB72 /* Headers */,
+				75CC3461D0E875E7DA6C7AA41A3D1ABC /* Sources */,
+				37DF6FE4412A0C3CD0A127B3E392A447 /* Frameworks */,
+				FFA93836E5F908DD2413929F5394B6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuthSwift;
+			productName = OAuthSwift;
+			productReference = 411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C26D1F56B79A699BC4DE26433A422F /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				E46D83F0CD00CB6C581A15FACBBDB57E /* Headers */,
+				330DE2BD20DFC08839359EADFE5BBCF0 /* Sources */,
+				D44BE32F0F2A099860CD3EA3E14F13E2 /* Frameworks */,
+				BBE4D27BCC51B5E2A3D3C5FFE924AA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = 5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 293CD6FC119472052FEA87B4052636E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */,
+				37484D3D699613823E9A5FF91C2F6740 /* Pods-Knittery */,
+				041773ADFE5EE818B83A7BF61242A868 /* Pods-Knittery-KnitteryUITests */,
+				2F3F50085D1C5D026205B9299E1FB95C /* Pods-KnitteryTests */,
+				CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B77855A23E622DC2B2D59A83EDA6F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8431CE909F878A5BE1F83091DB7A4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE4D27BCC51B5E2A3D3C5FFE924AA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA93B9B71C9A52A580873205EECA4C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA93836E5F908DD2413929F5394B6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06712752D2F0601570A197EAB8C51B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4211E036D9D65BA306BDBA12C48CDE97 /* Pods-Knittery-KnitteryUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330DE2BD20DFC08839359EADFE5BBCF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */,
+				3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */,
+				1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C25F07B2E5878509D5342F177C2D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C90681F84EC1CE693CB204A6A98B1E5 /* Pods-Knittery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7465C64771AFE0E92C3C7F1BB37F1620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81EB5AE5FD0154B8F37753A790B063E /* Pods-KnitteryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC3461D0E875E7DA6C7AA41A3D1ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006DD7B84DF4831DD62D5B5579921FE7 /* Collection+OAuthSwift.swift in Sources */,
+				FB67E162F70E22C08F56C4BCC20CAD91 /* Data+OAuthSwift.swift in Sources */,
+				924BF391A230C4F9F1983C6515505F40 /* Dictionary+OAuthSwift.swift in Sources */,
+				E52797125AD2E2D9BA35438ECBF96D8E /* HMAC.swift in Sources */,
+				79F9E680847862CAA7AD498865D66E6D /* Int+OAuthSwift.swift in Sources */,
+				2D5B4F161C175508C1269966646A7F97 /* NotificationCenter+OAuthSwift.swift in Sources */,
+				28985E0EB67584AE9C0FE79F7C85ED01 /* NSError+OAuthSwift.swift in Sources */,
+				9385149B9A22B987F4FC8DB1C6860652 /* OAuth1Swift.swift in Sources */,
+				D33D6D0305E5BB03D60948D963ABC2C5 /* OAuth2Swift.swift in Sources */,
+				51379581E67362A18BF16CEDADB8C956 /* OAuthSwift-dummy.m in Sources */,
+				EFA90FA94C23EEAF85DCA6E7B8492C7E /* OAuthSwift.swift in Sources */,
+				D142D105A2B254B0CB7166A31FDF18F3 /* OAuthSwiftClient.swift in Sources */,
+				0D72FD00D1FF38E593EE989D1ABC2539 /* OAuthSwiftCredential.swift in Sources */,
+				731BABF8341920C565BDF9D58283C500 /* OAuthSwiftError.swift in Sources */,
+				48771968DB2B53BC5096BEFC1F416B7F /* OAuthSwiftHTTPRequest.swift in Sources */,
+				C637809D777E60C7C968006DB6813DC8 /* OAuthSwiftMultipartData.swift in Sources */,
+				2DC5D4C745D8F3FA17B86F6483C1892C /* OAuthSwiftResponse.swift in Sources */,
+				1629C4B5726835A176893197171DD30C /* OAuthSwiftURLHandlerType.swift in Sources */,
+				C3AE2E522DA7C7EC0AE89A36CF3D5D26 /* OAuthWebViewController.swift in Sources */,
+				5566E0822D5B7688097407A43A0CE2E8 /* SHA1.swift in Sources */,
+				86AC21E47BE8FC247FE1FEE71AA17929 /* String+OAuthSwift.swift in Sources */,
+				36385D88156CC42B11548DB3CE618D5A /* UIApplication+OAuthSwift.swift in Sources */,
+				700ED1A5C0A766B293223FD3818AFFBA /* URL+OAuthSwift.swift in Sources */,
+				4F8EDBDDBBB9C640ABB64A8947FB24F8 /* URLConvertible.swift in Sources */,
+				F659137D17D1E461A59EB7340D16BA82 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CD314CB07E556639D2F0594F128360E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Knittery";
+			target = 37484D3D699613823E9A5FF91C2F6740 /* Pods-Knittery */;
+			targetProxy = C323BDF0737F654E6B1D6AA4B770338D /* PBXContainerItemProxy */;
+		};
+		65F9BB4A2710821C4191669AB60255CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */;
+			targetProxy = C8B694767292F0C7262BDC3E3A64AABA /* PBXContainerItemProxy */;
+		};
+		726108D1A2A11690C0768F472F73920C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			target = 3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */;
+			targetProxy = 003F7EEB3356B74A0BFAB3BD7F836AA4 /* PBXContainerItemProxy */;
+		};
+		BE447690FBA0081FFB95344F02FC7A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			target = 3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */;
+			targetProxy = BF89FF7E9B502C012DB93E88576113A7 /* PBXContainerItemProxy */;
+		};
+		C006CCF06074654B74BEC2853A230A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */;
+			targetProxy = 4E8623786FE0C0E6BB924554B8F2BBA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2A65EA68028148C866F756D86D078394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277D751916429219ECF7C46A2ECB0CBC /* OAuthSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47485F670F7681950C46C12AC23100BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0B29B651AB9B4731F6BFBC299D2A7D /* SwiftKeychainWrapper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E6957407F5C0D6330CF0FD59CA077E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9864D95A662A354A08AE5C8D8373F786 /* Pods-Knittery-KnitteryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74C4314AC98C3A89C47F294B605422CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79CA1DB340766BFA10F17558C19C769 /* SwiftKeychainWrapper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E6C4958B690EEF263B49A45B3117850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAB40F6847644B725EF808DFE65600C /* Pods-Knittery-KnitteryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84FEBF1A932F82159CA77F6B56454FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE18BE146C70C29020F7C23189F63D3 /* Pods-Knittery.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Knittery/Pods-Knittery-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Knittery/Pods-Knittery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A57D0111C12B70509A06B55DC78BBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8626172E3E2559C33A90B10874250E4D /* Pods-KnitteryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KnitteryTests/Pods-KnitteryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnitteryTests/Pods-KnitteryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF91EC416E1666512C870269A55A0677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB72795D93EBBD864DE148F531B85DC /* OAuthSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD8537A174151950F87F9F1D4224C42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C83BC0E01852A6B369E39BBE224962 /* Pods-KnitteryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KnitteryTests/Pods-KnitteryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnitteryTests/Pods-KnitteryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD16EA3D14C880B3BBA6D672273B14A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76105706EDA568C60C8CDF987E912CC /* Pods-Knittery.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Knittery/Pods-Knittery-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Knittery/Pods-Knittery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD68510A282BCE0A280E09754081B80 /* Build configuration list for PBXNativeTarget "Pods-Knittery-KnitteryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6C4958B690EEF263B49A45B3117850 /* Debug */,
+				4E6957407F5C0D6330CF0FD59CA077E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9521A209149E5ED8654825189CE940DD /* Build configuration list for PBXNativeTarget "Pods-Knittery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FEBF1A932F82159CA77F6B56454FA2 /* Debug */,
+				CD16EA3D14C880B3BBA6D672273B14A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C26D1F56B79A699BC4DE26433A422F /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47485F670F7681950C46C12AC23100BC /* Debug */,
+				74C4314AC98C3A89C47F294B605422CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984E9E4ACADC834F85B8DA4ABE20DC4D /* Build configuration list for PBXNativeTarget "OAuthSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A65EA68028148C866F756D86D078394 /* Debug */,
+				AF91EC416E1666512C870269A55A0677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB33B32438A337F866288E9182C84945 /* Build configuration list for PBXNativeTarget "Pods-KnitteryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8537A174151950F87F9F1D4224C42E /* Debug */,
+				9A57D0111C12B70509A06B55DC78BBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
