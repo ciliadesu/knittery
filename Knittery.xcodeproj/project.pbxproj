@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B13C41F25C3304D00B00EBE /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13C41E25C3304D00B00EBE /* Keys.swift */; };
 		503818D22495220900165C8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503818D12495220900165C8B /* User.swift */; };
 		503818D4249671EE00165C8B /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503818D3249671EE00165C8B /* NavView.swift */; };
 		5066AFED249CA847007D89FC /* xHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066AFEC249CA847007D89FC /* xHeaders.swift */; };
@@ -53,6 +54,7 @@
 		02E4A22639F6948A45C1DB26 /* Pods-Knittery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knittery.debug.xcconfig"; path = "Target Support Files/Pods-Knittery/Pods-Knittery.debug.xcconfig"; sourceTree = "<group>"; };
 		1764798D1B6D18E8FAF19B27 /* Pods-Knittery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knittery.release.xcconfig"; path = "Target Support Files/Pods-Knittery/Pods-Knittery.release.xcconfig"; sourceTree = "<group>"; };
 		2813CA85E093149DD0E3E3EC /* Pods_Knittery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knittery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B13C41E25C3304D00B00EBE /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		32793D4AFC3C78A8063B0B03 /* Pods-KnitteryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnitteryTests.debug.xcconfig"; path = "Target Support Files/Pods-KnitteryTests/Pods-KnitteryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36C024AB361E8FE7AC34E669 /* Pods_Knittery_KnitteryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knittery_KnitteryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48607B9A3D7C38F00C14B407 /* Pods-Knittery-KnitteryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knittery-KnitteryUITests.release.xcconfig"; path = "Target Support Files/Pods-Knittery-KnitteryUITests/Pods-Knittery-KnitteryUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				50F111F92492972400C9141A /* AppColors.swift */,
 				50F111FB24929CDC00C9141A /* Constants.swift */,
 				5066AFEE249CAFD9007D89FC /* TokenHandler.swift */,
+				2B13C41E25C3304D00B00EBE /* Keys.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				503818D4249671EE00165C8B /* NavView.swift in Sources */,
+				2B13C41F25C3304D00B00EBE /* Keys.swift in Sources */,
 				50F111F52492965F00C9141A /* SearchView.swift in Sources */,
 				5066AFF1249F3B87007D89FC /* LogOutView.swift in Sources */,
 				50F111C1249294C800C9141A /* AppDelegate.swift in Sources */,

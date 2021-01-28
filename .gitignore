@@ -110,3 +110,6 @@ Temporary Items
 
 # vim
 *.swp
+
+# Knittery project specific
+Keys.swift

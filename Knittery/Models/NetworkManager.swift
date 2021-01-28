@@ -51,8 +51,8 @@ class NetworkManager {
     
     init() {
         oauthswift = OAuth2Swift(
-            consumerKey:    "REDACTED_KEY",
-            consumerSecret: "REDACTED_SECRET",
+            consumerKey:    Keys.consumerKey,
+            consumerSecret: Keys.consumerSecret,
             authorizeUrl:   "https://www.ravelry.com/oauth2/auth",
             accessTokenUrl: "https://www.ravelry.com/oauth2/token",
             responseType:   "code"
