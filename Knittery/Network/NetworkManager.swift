@@ -13,9 +13,10 @@ import Combine
 
 
 class NetworkManager {
-    
+        
     var oauthswift: OAuth2Swift
     var callback: ((String) -> Void)?
+    var result: ((Codable) -> Void)?
     var tokenHandler = TokenHandler()
     
     init() {
@@ -81,34 +82,46 @@ class NetworkManager {
             }
         }
     }
-        
 
     public func fetchUser() {
         if let url = URL(string: "https://api.ravelry.com/current_user.json") {
-            let session = URLSession(configuration: .default)
-            var request = URLRequest(url: url)
-            
-            guard let token = tokenHandler.getToken(ofType: .access) else { return }
-            let responseToken = "Bearer: \(token)"
-            request.addValue(responseToken, forHTTPHeaderField: "Authorization")
-            
-            let task = session.dataTask(with: request) { (data, response, error) in
-                if error == nil {
-                    let decoder = JSONDecoder()
-                    if let safeData = data {
-                        do {
-                            let result = try decoder.decode(CurrentUser.self, from: safeData)
-                            DispatchQueue.main.async {
-                                self.callback?(result.user.username)
-                            }
-                            print("Username fetched: \(result.user.username)")
-                        } catch {
-                            print(error)
+            performNetworkRequest(url: url, type: CurrentUser.self)
+        }
+    }
+    
+    public func fetchFavorites(for user: String) {
+        //GET /people/{username}/favorites/list.json
+        if let url = URL(string: "https://api.ravelry.com/people/\(user)/favorites/list.json?types=pattern") {
+            print(url)
+            performNetworkRequest(url: url, type: FavoritesList.self)
+        }
+    }
+    
+    private func performNetworkRequest<T>(url: URL, type: T.Type) where T : Codable {
+        let session = URLSession(configuration: .default)
+        var request = URLRequest(url: url)
+        
+        guard let token = tokenHandler.getToken(ofType: .access) else { return }
+        let responseToken = "Bearer: \(token)"
+        request.addValue(responseToken, forHTTPHeaderField: "Authorization")
+        
+        let task = session.dataTask(with: request) { (data, response, error) in
+            if error == nil {
+                let decoder = JSONDecoder()
+                if let safeData = data {
+                    do {
+                        let result = try decoder.decode(type, from: safeData)
+                        DispatchQueue.main.async {
+                            self.result?(result)
                         }
+                        print("Fetched data: \(result)")
+                    } catch {
+                        print(error)
                     }
                 }
             }
-            task.resume()
         }
+        task.resume()
     }
+    
 }

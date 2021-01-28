@@ -22,11 +22,11 @@ class AuthStatus: ObservableObject {
             networkManager.refreshAccessToken()
         }
         
-        networkManager.callback = { [weak self] username in
-            self?.username = username
-            print("Fetched username: \(username)")
+        networkManager.result = { [weak self] result in
+            if let currentUser = result as? CurrentUser {
+                self?.username = currentUser.user.username
+            }
             self?.isLoggedIn = true
-            print("Is logged in")
         }
         
         networkManager.fetchUser()

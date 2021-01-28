@@ -10,11 +10,9 @@ import Foundation
 
 class SearchViewModel: ObservableObject {
     @Published var searchResults: [String]
-    let networkManager: NetworkManager
     
     init() {
         searchResults = []
-        networkManager = NetworkManager()
     }
     
     public func performSearch() {

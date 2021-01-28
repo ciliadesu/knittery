@@ -9,12 +9,24 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    @EnvironmentObject var userStatus: AuthStatus
+    
     var body: some View {
         ZStack {
             Color.orange
                 .edgesIgnoringSafeArea(.all)
             VStack (alignment: .leading){
-                Text("Content")
+                Button(action: {
+                    let model = FavoritesViewModel(userStatus)
+                }, label: {
+                    Text("Load favorites")
+                        .padding()
+                        .background(Color.beige)
+                        .foregroundColor(Color.orange)
+                        .cornerRadius(15)
+                        .imageScale(.large)
+                })
             }
         }
     }
