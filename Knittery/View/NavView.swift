@@ -15,7 +15,7 @@ struct NavView: View {
                 .tabItem {
                     Image(systemName: "house.fill")
                         .imageScale(.large)
-                    Text(Constants.home)
+                    Text(Constants.Strings.home)
             }
             
             
@@ -23,7 +23,7 @@ struct NavView: View {
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                         .imageScale(.large)
-                    Text(Constants.search)
+                    Text(Constants.Strings.search)
             }
             
             
@@ -31,7 +31,7 @@ struct NavView: View {
                 .tabItem {
                     Image(systemName: "heart.fill")
                         .imageScale(.large)
-                    Text(Constants.favorites)
+                    Text(Constants.Strings.favorites)
             }
         }
         .accentColor(.hotPink)

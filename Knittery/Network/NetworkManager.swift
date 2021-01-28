@@ -12,37 +12,6 @@ import SwiftUI
 import Combine
 
 
-class UserViewModel: ObservableObject {
-    @Published var username: String
-    let networkManager: NetworkManager
-    
-    init() {
-        username = "Not logged in"
-        networkManager = NetworkManager()
-        networkManager.setCallbackFunc(callbackFunction: { username in
-            self.updateUserName(username)
-        })
-    }
-    
-    private func updateUserName(_ newUsername: String) {
-        username = newUsername
-    }
-}
-
-class SearchViewModel: ObservableObject {
-    @Published var searchResults: [String]
-    let networkManager: NetworkManager
-    
-    init() {
-        searchResults = []
-        networkManager = NetworkManager()
-    }
-    
-    public func performSearch() {
-        print("Search!")
-    }
-}
-
 class NetworkManager {
     
     var oauthswift: OAuth2Swift
@@ -141,11 +110,5 @@ class NetworkManager {
             }
             task.resume()
         }
-    }
-    
-
-   
-    public func setCallbackFunc(callbackFunction: ((_ username: String) -> Void)?) {
-        callback = callbackFunction
     }
 }

@@ -11,10 +11,15 @@ import Foundation
 struct Constants {
     
     //Strings
-    static let home = "Home"
-    static let search = "Search"
-    static let favorites = "Favorites"
+    struct Strings {
+        static let home = "Home"
+        static let search = "Search"
+        static let favorites = "Favorites"
+    }
     
     //Images
-    static let yarn = "yarn"
+    struct Images {
+        static let yarn = "yarn"
+    }
+    
 }

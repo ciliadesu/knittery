@@ -10,7 +10,6 @@ import Foundation
 
 struct CurrentUser: Codable {
     let user: User
-    //let description: String
 }
 
 struct User: Codable {

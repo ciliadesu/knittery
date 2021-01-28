@@ -23,11 +23,7 @@ struct TitleText : View {
 
 struct StartView: View {
     
-    @ObservedObject var viewModel = UserViewModel()
-    
-    init() {
-        viewModel.networkManager.fetchUser()
-    }
+    @EnvironmentObject var userStatus: AuthStatus
     
     var body: some View {
         NavigationView{
@@ -36,34 +32,34 @@ struct StartView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack (alignment: .center){
-                    Image(Constants.yarn)
+                    Image(Constants.Images.yarn)
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color.beige, lineWidth: 3))
-                    TitleText(text: "Welcome to Knittery2!")
                     Text("Welcome to Knittery!")
                         .font(.title)
                         .foregroundColor(.beige)
-                    Text("You are logged in as: \(viewModel.username)")
+                    Text("You are logged in as: \(userStatus.username)")
                         .foregroundColor(.beige)
                     Text("Tap Search to get started.")
                         .foregroundColor(.beige)
                         .padding(.bottom, 10)
-                    NavigationLink(destination: LogOutView()) {
-                        HStack (alignment: .bottom) {
-                            Text("Log out")
-                                .padding()
-                                .background(Color.beige)
-                                .foregroundColor(Color.hotPink)
-                                .cornerRadius(15)
-                                .imageScale(.large)
-                        }
-                        .padding(25)
-                    }
+                    Button(action: {
+                        userStatus.logOut()
+                    }, label: {
+                        Text("Log out")
+                            .padding()
+                            .background(Color.beige)
+                            .foregroundColor(Color.hotPink)
+                            .cornerRadius(15)
+                            .imageScale(.large)
+                    })
+                    .padding(25)
                 }
             }
         }
     }
 }
+
 
 
 struct StartView_Previews: PreviewProvider {
