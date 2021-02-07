@@ -1,5 +1,5 @@
 //
-//  UserStatus.swift
+//  CurrentUser.swift
 //  Knittery
 //
 //  Created by Cecilia Valenti on 2021-01-28.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AuthStatus: ObservableObject {
+class CurrentUser: ObservableObject {
     
     @Published var username: String = ""
     @Published var isLoggedIn: Bool = false
@@ -22,14 +22,22 @@ class AuthStatus: ObservableObject {
             networkManager.refreshAccessToken()
         }
         
-        networkManager.result = { [weak self] result in
-            if let currentUser = result as? CurrentUser {
-                self?.username = currentUser.user.username
-            }
-            self?.isLoggedIn = true
+        guard let request = networkManager.requestBuilder(URL.currentUser) else {
+            print("Could not build request")
+            return
         }
         
-        networkManager.fetchUser()
+        networkManager.makeRequest(request) { (result: Result<CurrentUserDTO, RequestError>) in
+            switch result {
+            case .success(let dto):
+                DispatchQueue.main.async {
+                    self.username = dto.user.username
+                    self.isLoggedIn = true
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     public func logOut() {

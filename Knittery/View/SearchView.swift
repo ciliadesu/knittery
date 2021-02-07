@@ -28,8 +28,7 @@ struct SearchView: View {
         NavigationView {
             
             ZStack {
-                Color.pineGreen
-                    .edgesIgnoringSafeArea(.all)
+
                 VStack{
                     Divider()
                     SearchBar(text: $searchText)
@@ -38,7 +37,7 @@ struct SearchView: View {
                     Spacer()
                     NavigationLink(destination: SearchResultsView(searchText)) {
                         HStack (alignment: .bottom) {
-                            Spacer()
+                                Spacer()
                             Image(systemName: "magnifyingglass")
                                 .padding()
                                 .background(Color.beige)
@@ -68,8 +67,6 @@ struct SearchResultsView: View {
     
     var body: some View {
         ZStack{
-            Color.pineGreen
-                .edgesIgnoringSafeArea(.all)
             Text(searchString)
         }
     }

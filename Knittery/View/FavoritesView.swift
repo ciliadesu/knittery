@@ -10,25 +10,32 @@ import SwiftUI
 
 struct FavoritesView: View {
     
-    @EnvironmentObject var userStatus: AuthStatus
+    @EnvironmentObject var currentUser: CurrentUser
+    @ObservedObject var viewModel: FavoritesViewModel
+    
+    init(viewModel: FavoritesViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        ZStack {
-            Color.orange
-                .edgesIgnoringSafeArea(.all)
-            VStack (alignment: .leading){
-                Button(action: {
-                    let model = FavoritesViewModel(userStatus)
-                }, label: {
-                    Text("Load favorites")
-                        .padding()
-                        .background(Color.beige)
-                        .foregroundColor(Color.orange)
-                        .cornerRadius(15)
-                        .imageScale(.large)
-                })
+        
+        NavigationView {
+            VStack (alignment: .leading) {
+                List(viewModel.favorites) { item in
+                    ListItemView(ListItemViewModel(currentUser: currentUser, item: item))
+                }
             }
+            .navigationBarTitle("Favorites", displayMode: .large)
+        }
+        .onAppear {
+            print("On appear!")
+            viewModel.loadBookmarks()
         }
     }
 }
 
+struct FavoritesView_Previews: PreviewProvider {
+    static var previews: some View {
+        FavoritesView(viewModel: FavoritesViewModel(CurrentUser()))
+    }
+}

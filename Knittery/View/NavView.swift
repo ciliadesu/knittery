@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct NavView: View {
+    @EnvironmentObject var currentUser: CurrentUser
     var body: some View {
         TabView {
             StartView()
@@ -27,7 +28,7 @@ struct NavView: View {
             }
             
             
-            FavoritesView()
+            FavoritesView(viewModel: FavoritesViewModel(currentUser))
                 .tabItem {
                     Image(systemName: "heart.fill")
                         .imageScale(.large)

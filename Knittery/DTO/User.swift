@@ -8,10 +8,12 @@
 
 import Foundation
 
-struct CurrentUser: Codable {
-    let user: User
-}
-
 struct User: Codable {
     let username: String
 }
+
+struct CurrentUserDTO: Codable {
+    let user: User
+}
+
+

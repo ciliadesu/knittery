@@ -16,11 +16,11 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ContentView: View {
-    @EnvironmentObject var userStatus: AuthStatus
+    @EnvironmentObject var currentUser: CurrentUser
     
     var body: some View  {
         Group {
-            if userStatus.isLoggedIn {
+            if currentUser.isLoggedIn {
                 NavView()
             } else {
                 LoginView()

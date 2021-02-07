@@ -13,9 +13,10 @@ struct FavoritesList: Codable {
     let paginator: Paginator
 }
 
-struct Bookmark: Codable {
+struct Bookmark: Codable, Identifiable {
     let id: Int
     let type: String
+    let favorited: Pattern
 }
 
 

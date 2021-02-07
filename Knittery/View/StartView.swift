@@ -23,13 +23,11 @@ struct TitleText : View {
 
 struct StartView: View {
     
-    @EnvironmentObject var userStatus: AuthStatus
+    @EnvironmentObject var currentUser: CurrentUser
     
     var body: some View {
         NavigationView{
             ZStack {
-                Color.hotPink
-                    .edgesIgnoringSafeArea(.all)
                 
                 VStack (alignment: .center){
                     Image(Constants.Images.yarn)
@@ -37,14 +35,14 @@ struct StartView: View {
                         .overlay(Circle().stroke(Color.beige, lineWidth: 3))
                     Text("Welcome to Knittery!")
                         .font(.title)
-                        .foregroundColor(.beige)
-                    Text("You are logged in as: \(userStatus.username)")
-                        .foregroundColor(.beige)
+                        .foregroundColor(.hotPink)
+                    Text("You are logged in as: \(currentUser.username)")
+                        .foregroundColor(.hotPink)
                     Text("Tap Search to get started.")
-                        .foregroundColor(.beige)
+                        .foregroundColor(.hotPink)
                         .padding(.bottom, 10)
                     Button(action: {
-                        userStatus.logOut()
+                        currentUser.logOut()
                     }, label: {
                         Text("Log out")
                             .padding()

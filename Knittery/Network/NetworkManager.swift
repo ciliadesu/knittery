@@ -12,8 +12,15 @@ import SwiftUI
 import Combine
 
 
+public enum RequestError: Error {
+    case clientError
+    case serverError
+    case noData
+    case decodingError
+}
+
 class NetworkManager {
-        
+            
     var oauthswift: OAuth2Swift
     var callback: ((String) -> Void)?
     var result: ((Codable) -> Void)?
@@ -82,46 +89,56 @@ class NetworkManager {
             }
         }
     }
-
-    public func fetchUser() {
-        if let url = URL(string: "https://api.ravelry.com/current_user.json") {
-            performNetworkRequest(url: url, type: CurrentUser.self)
-        }
-    }
     
-    public func fetchFavorites(for user: String) {
-        //GET /people/{username}/favorites/list.json
-        if let url = URL(string: "https://api.ravelry.com/people/\(user)/favorites/list.json?types=pattern") {
-            print(url)
-            performNetworkRequest(url: url, type: FavoritesList.self)
-        }
-    }
-    
-    private func performNetworkRequest<T>(url: URL, type: T.Type) where T : Codable {
-        let session = URLSession(configuration: .default)
+    public func requestBuilder(_ url: URL) -> URLRequest? {
         var request = URLRequest(url: url)
-        
-        guard let token = tokenHandler.getToken(ofType: .access) else { return }
+        guard let token = tokenHandler.getToken(ofType: .access) else {
+            print("Could not get access token")
+            return nil
+        }
         let responseToken = "Bearer: \(token)"
         request.addValue(responseToken, forHTTPHeaderField: "Authorization")
-        
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if error == nil {
-                let decoder = JSONDecoder()
-                if let safeData = data {
-                    do {
-                        let result = try decoder.decode(type, from: safeData)
-                        DispatchQueue.main.async {
-                            self.result?(result)
-                        }
-                        print("Fetched data: \(result)")
-                    } catch {
-                        print(error)
-                    }
-                }
+        return request
+    }
+    
+    public func makeRequest<T: Codable>(_ request: URLRequest, resultHandler: @escaping (Result<T, RequestError>) -> Void) {
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard error == nil else {
+                resultHandler(.failure(.clientError))
+                return
             }
+            
+            guard let r = response as? HTTPURLResponse, 200...299 ~= r.statusCode else {
+                print(response.debugDescription)
+                resultHandler(.failure(.serverError))
+                return
+            }
+            
+            guard let data = data else {
+                resultHandler(.failure(.noData))
+                return
+            }
+            
+            /* Uncomment the following to print out the entire JSON response */
+//            guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+//                resultHandler(.failure(.decodingError))
+//                return
+//            }
+//            print("JSON:", json)
+            
+            guard let decoded: T = self.decodedData(data) else {
+                resultHandler(.failure(.decodingError))
+                return
+            }
+            
+            resultHandler(.success(decoded))
+            
         }
         task.resume()
+    }
+    
+    private func decodedData<T: Codable>(_ data: Data) -> T? {
+        return try? JSONDecoder().decode(T.self, from: data)
     }
     
 }

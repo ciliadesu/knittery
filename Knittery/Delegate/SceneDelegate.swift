@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    var userStatus = AuthStatus()
+    var currentUser = CurrentUser()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView().environmentObject(userStatus)
+        let contentView = ContentView().environmentObject(currentUser)
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -41,18 +41,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if url.host == "oauth-callback" {
             OAuthSwift.handle(url: url)
             
-            print("Auth handled. Now opening navView")
-            userStatus.isLoggedIn = true
-//            let navView = NavView()
-//
-//            // Use a UIHostingController as window root view controller.
-//            if let windowScene = scene as? UIWindowScene {
-//                let window = UIWindow(windowScene: windowScene)
-//                window.rootViewController = UIHostingController(rootView: navView)
-//                self.window = window
-//                window.makeKeyAndVisible()
-//
-//            }
+            print("Auth handled.")
+            
+            currentUser.isLoggedIn = true
         }
     }
     func sceneDidDisconnect(_ scene: UIScene) {

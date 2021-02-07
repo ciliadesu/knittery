@@ -13,8 +13,6 @@ struct LoginView: View {
     let networkManager = NetworkManager()
     var body: some View {
         ZStack {
-            Color.hotPink
-                .edgesIgnoringSafeArea(.all)
             
             VStack (alignment: .center){
                 Image(Constants.Images.yarn)
@@ -22,9 +20,9 @@ struct LoginView: View {
                     .overlay(Circle().stroke(Color.beige, lineWidth: 3))
                 Text("Welcome to Knittery!")
                     .font(.title)
-                    .foregroundColor(.beige)
+                    .foregroundColor(.hotPink)
                 Text("Login to get started.")
-                    .foregroundColor(.beige)
+                    .foregroundColor(.hotPink)
                     .padding(.bottom, 10)
                 
                 Button(action: {

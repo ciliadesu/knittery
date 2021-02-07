@@ -7,23 +7,41 @@
 //
 
 import SwiftUI
+import Combine
 
-class FavoritesViewModel {
-    let userStatus: AuthStatus
-    
-    init(_ userStatus: AuthStatus) {
-        self.userStatus = userStatus
-        loadFavorites()
+class FavoritesViewModel: ViewModel {
+    enum Action {
+        case loading
     }
     
-    private func loadFavorites() {
-        userStatus.networkManager.fetchFavorites(for: userStatus.username)
+    let currentUser: CurrentUser
+    
+    @Published var favorites: [Pattern] = []
+    
+    init(_ currentUser: CurrentUser) {
         
-        userStatus.networkManager.result = { result in
-            guard let faves = result as? FavoritesList else { return }
-            print("Successfully fetched favorites list")
+        self.currentUser = currentUser
+    }
+    
+    func loadBookmarks() {
+        
+        guard
+            let url = URL.favorites(currentUser.username),
+            let request = currentUser.networkManager.requestBuilder(url) else {
+            print("Could not build request")
+            return
+        }
+
+        currentUser.networkManager.makeRequest(request) { [weak self] (result: Result<FavoritesList, RequestError>) in
+            switch result {
+            case .success(let dto):
+                DispatchQueue.main.async {
+                    print(dto)
+                    self?.favorites = dto.favorites.map { $0.favorited }
+                }
+            case .failure(let error):
+                print(error)
+            }
         }
     }
-    
-    
 }
