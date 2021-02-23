@@ -20,6 +20,11 @@ struct Keys {
 }
 ```
 
+## Dependencies
+Knittery uses the following cocoapods:
+- OAuthSwift- https://github.com/OAuthSwift/OAuthSwift
+- SwiftKeychainWrapper - https://github.com/jrendel/SwiftKeychainWrapper
+
 ## What Knittery does
 Not a whole lot right now, since it's under development :)
 
