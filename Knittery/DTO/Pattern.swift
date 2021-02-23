@@ -9,12 +9,17 @@
 import Foundation
 
 struct Pattern: Codable, Identifiable {
-//    let created_at: String
     let id: Int
     let name: String
-//    let pattern_author: PatternAuthor
-    let pattern_attributes: [PatternAttribute]?
-    let first_photo: Photo?
+    let attributes: [PatternAttribute]?
+    let firstPhoto: Photo?
+    
+    enum CodingKeys: String, CodingKey {
+        case attributes = "pattern_attributes"
+        case firstPhoto = "first_photo"
+        
+        case id, name
+    }
 }
 
 struct PatternAttribute: Codable {

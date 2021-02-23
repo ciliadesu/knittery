@@ -27,7 +27,6 @@ struct NavView: View {
                     Text(Constants.Strings.search)
             }
             
-            
             FavoritesView(viewModel: FavoritesViewModel(currentUser))
                 .tabItem {
                     Image(systemName: "heart.fill")

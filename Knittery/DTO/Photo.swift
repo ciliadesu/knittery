@@ -9,6 +9,11 @@
 import Foundation
 
 struct Photo: Codable {
-    let small_url: String
+    let smallURL: String
     let id: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case smallURL = "small_url"
+        case id
+    }
 }

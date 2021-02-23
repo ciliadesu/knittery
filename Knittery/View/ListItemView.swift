@@ -9,16 +9,21 @@
 import SwiftUI
 
 struct ListItemView: View {
-    let viewModel: ListItemViewModel
+    
+    @ObservedObject var viewModel: ListItemViewModel
+    
     init(_ viewModel: ListItemViewModel) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        HStack{
+            URLImage(url: viewModel.pattern.firstPhoto?.smallURL ?? "")
+                .scaledToFit()
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
             Text(viewModel.pattern.name)
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100)
+        
     }
 }
 

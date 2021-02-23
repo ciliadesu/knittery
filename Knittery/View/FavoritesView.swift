@@ -20,12 +20,10 @@ struct FavoritesView: View {
     var body: some View {
         
         NavigationView {
-            VStack (alignment: .leading) {
-                List(viewModel.favorites) { item in
-                    ListItemView(ListItemViewModel(currentUser: currentUser, item: item))
-                }
+            List(viewModel.favorites) { item in
+                ListItemView(ListItemViewModel(currentUser: currentUser, item: item))
             }
-            .navigationBarTitle("Favorites", displayMode: .large)
+            .navigationBarTitle("Favorites", displayMode: .inline)
         }
         .onAppear {
             print("On appear!")
