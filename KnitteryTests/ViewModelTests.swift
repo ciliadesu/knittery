@@ -13,9 +13,9 @@ class ViewModelTests: XCTestCase {
 
     func testFavoritesViewModel() {
         
-        let vm = FavoritesViewModel(CurrentUser())
+        let vm = FavoritesViewModel()
         XCTAssertEqual(vm.currentState.description(), "idle")
-        vm.handle(.onAppear)
+        vm.handle(.onAppear(CurrentUser()))
         XCTAssertEqual(vm.currentState.description(), "loading")
     }
     
@@ -27,5 +27,14 @@ class ViewModelTests: XCTestCase {
         vm.handle(.onAppear)
         XCTAssertEqual(vm.currentState.description(), "loaded")
         
+    }
+    
+    func testPatternDetailViewModel() {
+        
+        let vm = PatternDetailViewModel(patternId: 123,
+                                        currentUser: CurrentUser())
+        XCTAssertEqual(vm.currentState.description(), "idle")
+        vm.handle(.onAppear)
+        XCTAssertEqual(vm.currentState.description(), "loaded")
     }
 }

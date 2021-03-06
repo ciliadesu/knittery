@@ -20,6 +20,10 @@ extension URL {
         let idString = ids.map { String($0) }.joined(separator: "+")
         return URL(string: "https://api.ravelry.com/patterns.json?ids=\(idString)")
     }
+    
+    static func fetchPattern(with id: Int) -> URL? {
+        return URL(string: "https://api.ravelry.com/patterns/\(id).json")
+    }
 }
 /*
  //    public func fetchUser() {
@@ -37,13 +41,6 @@ extension URL {
  //        }
  //    }
  //
- //    public func fetchPattern(with id: Int) {
-         // GET /patterns/{id}.json
- //        if let url = URL(string: "https://api.ravelry.com/patterns/\(id).json") {
- //            print(url)
- //            performNetworkRequest(url: url, type: Pattern.self)
- //        }
- //    }
      
  //    public func fetchPatterns(with ids: [Int]) {
  //        // Make query string with id+id+id

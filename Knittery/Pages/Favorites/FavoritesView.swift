@@ -45,9 +45,14 @@ struct FavoritesView: View {
     func list(of patterns: [Pattern]) -> some View {
         NavigationView {
             List(patterns) { item in
-                ListItemView(ListItemViewModel(currentUser: currentUser, item: item))
+                NavigationLink(
+                    destination: PatternDetailView(PatternDetailViewModel(patternId: item.id, currentUser: currentUser))
+                ) {
+                    ListItemView(ListItemViewModel(currentUser: currentUser, item: item))
+                }
             }
         }
+        .navigationTitle("Favorites")
     }
 }
 
