@@ -10,4 +10,6 @@ import Foundation
 
 public protocol ViewModel: ObservableObject {
     associatedtype Action
+    associatedtype State
+    func handle(_ action: Action)
 }

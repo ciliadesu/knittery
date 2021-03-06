@@ -13,10 +13,12 @@ struct Pattern: Codable, Identifiable {
     let name: String
     let attributes: [PatternAttribute]?
     let firstPhoto: Photo?
+    let patternAuthor: PatternAuthor
     
     enum CodingKeys: String, CodingKey {
         case attributes = "pattern_attributes"
         case firstPhoto = "first_photo"
+        case patternAuthor = "pattern_author"
         
         case id, name
     }

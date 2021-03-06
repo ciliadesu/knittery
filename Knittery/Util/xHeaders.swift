@@ -16,7 +16,11 @@ class XHeaders: OAuthSwiftCredentialHeadersFactory {
         self.credential = credential
     }
     
-    func make(_ url:URL, method: OAuthSwiftHTTPRequest.Method, parameters: OAuthSwift.Parameters, body: Data?) -> [String:String] {
+    func make(_ url:URL,
+              method: OAuthSwiftHTTPRequest.Method,
+              parameters: OAuthSwift.Parameters,
+              body: Data?) -> [String:String] {
+        
           if credential.oauthToken.isEmpty {
              let loginString = String(format: "%@:%@", credential.consumerKey, credential.consumerSecret)
             let loginData = loginString.data(using: String.Encoding.utf8)!
