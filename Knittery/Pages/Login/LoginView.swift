@@ -20,9 +20,9 @@ struct LoginView: View {
                     .overlay(Circle().stroke(Color.beige, lineWidth: 3))
                 Text("Welcome to Knittery!")
                     .font(.title)
-                    .foregroundColor(.hotPink)
+                    .foregroundColor(.ksuPurple)
                 Text("Login to get started.")
-                    .foregroundColor(.hotPink)
+                    .foregroundColor(.ksuPurple)
                     .padding(.bottom, 10)
                 
                 Button(action: {
@@ -31,7 +31,7 @@ struct LoginView: View {
                     Text("Log in")
                         .padding()
                         .background(Color.beige)
-                        .foregroundColor(Color.hotPink)
+                        .foregroundColor(Color.ksuPurple)
                         .cornerRadius(15)
                 }
                 .padding()

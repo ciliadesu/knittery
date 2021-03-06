@@ -36,17 +36,18 @@ struct ListItemView: View {
     }
     
     var imgView: some View {
-        HStack(spacing: 5) {
-            URLImage(url: viewModel.pattern.firstPhoto?.smallURL ?? "")
+        HStack(spacing: 10) {
+            URLImage(url: viewModel.pattern.firstPhoto?.squareURL ?? "")
                 .scaledToFit()
-                .frame(width: 100, height: 75, alignment: .leading)
-            VStack(alignment: .leading) {
+                .frame(width: 85, height: 85, alignment: .leading)
+                .clipShape(Circle())
+                VStack(alignment: .leading) {
                 Text(viewModel.pattern.name)
                     .bold()
                 Text("by: \(viewModel.pattern.patternAuthor.name)")
             }
         }
-        .padding(10)
+        .padding(5)
     }
 }
 

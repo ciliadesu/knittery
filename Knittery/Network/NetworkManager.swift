@@ -17,6 +17,15 @@ public enum RequestError: Error {
     case serverError
     case noData
     case decodingError
+    
+    func description() -> String {
+        switch self {
+        case .clientError: return "Client error"
+        case .serverError: return "Server error"
+        case .noData: return "No data error"
+        case .decodingError: return "Decoding error"
+        }
+    }
 }
 
 class NetworkManager {
@@ -104,6 +113,7 @@ class NetworkManager {
     public func makeRequest<T: Codable>(_ request: URLRequest, resultHandler: @escaping (Result<T, RequestError>) -> Void) {
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard error == nil else {
+                print(error?.localizedDescription)
                 resultHandler(.failure(.clientError))
                 return
             }
@@ -115,18 +125,20 @@ class NetworkManager {
             }
             
             guard let data = data else {
+                print(RequestError.noData.description())
                 resultHandler(.failure(.noData))
                 return
             }
             
             /* Uncomment the following to print out the entire JSON response */
-//            guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
-//                resultHandler(.failure(.decodingError))
-//                return
-//            }
-//            print("JSON:", json)
+            guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                resultHandler(.failure(.decodingError))
+                return
+            }
+            print("JSON:", json)
             
             guard let decoded: T = self.decodedData(data) else {
+                print(RequestError.decodingError.description())
                 resultHandler(.failure(.decodingError))
                 return
             }
@@ -138,7 +150,13 @@ class NetworkManager {
     }
     
     private func decodedData<T: Codable>(_ data: Data) -> T? {
-        return try? JSONDecoder().decode(T.self, from: data)
+        do {
+            let decode = try JSONDecoder().decode(T.self, from: data)
+            return decode
+        } catch let error {
+            print(error)
+            return nil
+        }
     }
     
 }

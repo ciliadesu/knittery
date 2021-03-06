@@ -22,10 +22,13 @@ struct URLImage: View {
     
     var body: some View {
         if let loadedImage = self.imageLoader.downloadedImage {
-            return Image(uiImage: loadedImage)
-                .resizable()
+            return AnyView(
+                Image(uiImage: loadedImage)
+                    .resizable()
+                    .scaledToFit()
+            )
         } else {
-            return placeholder
+            return AnyView(placeholder)
         }
     }
 }

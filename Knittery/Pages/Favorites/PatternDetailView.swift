@@ -17,7 +17,55 @@ struct PatternDetailView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        content
+            .onAppear {
+                viewModel.handle(.onAppear)
+            }
+    }
+    
+    var content: some View {
+        switch viewModel.currentState {
+        
+        case .idle:
+            return AnyView(Color.clear)
+        case .loading:
+            return AnyView(ProgressView())
+        case .loaded(let pattern):
+            return AnyView(patternView(pattern))
+        case .error(let error):
+            return AnyView(Text("An error occured: \(error.localizedDescription)"))
+        }
+    }
+    
+    private func patternView(_ pattern: Pattern) -> some View {
+        ScrollView {
+            URLImage(url: pattern.photos?.first?.mediumURL ?? "")
+            
+            
+                Text(pattern.name)
+                    .font(.largeTitle)
+                Text("By: \(pattern.patternAuthor.name)")
+                    .font(.subheadline)
+            
+            
+            HStack(alignment: .center) {
+                VStack(alignment: .leading) {
+                    Text("Pattern info")
+                        .font(.headline)
+                    Text("Yarn weight: \(pattern.yarnWeight?.name ?? "")")
+                }
+                .padding()
+            }
+            .background(Color.beige)
+            .cornerRadius(20)
+            .padding()
+            
+
+                Text(pattern.notes ?? "")
+                    .padding()
+
+        }
+        
     }
 }
 

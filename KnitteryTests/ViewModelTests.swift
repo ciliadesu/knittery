@@ -35,6 +35,6 @@ class ViewModelTests: XCTestCase {
                                         currentUser: CurrentUser())
         XCTAssertEqual(vm.currentState.description(), "idle")
         vm.handle(.onAppear)
-        XCTAssertEqual(vm.currentState.description(), "loaded")
+        XCTAssertEqual(vm.currentState.description(), "loading")
     }
 }

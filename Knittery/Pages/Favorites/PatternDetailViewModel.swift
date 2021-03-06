@@ -32,7 +32,7 @@ class PatternDetailViewModel: ViewModel {
     enum State {
         case idle
         case loading
-        case loaded
+        case loaded(Pattern)
         case error(Error)
         
         func description() -> String {
@@ -50,7 +50,27 @@ class PatternDetailViewModel: ViewModel {
     }
     
     private func fetchPattern() {
+        guard let url = URL.fetchPattern(with: patternId),
+              let request = currentUser.networkManager.requestBuilder(url) else {
+            print("Could not build request")
+            return
+        }
         
+        currentUser.networkManager.makeRequest(request) { [weak self] (result: Result<PatternDTO, RequestError>) in
+            switch result {
+            case .success(let pattern):
+                print(pattern)
+                DispatchQueue.main.async {
+                    self?.currentState = .loaded(pattern.pattern)
+                }
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self?.currentState = .error(error)
+                }
+            }
+        }
     }
     
 }

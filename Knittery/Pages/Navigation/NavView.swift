@@ -34,7 +34,7 @@ struct NavView: View {
                     Text(Constants.Strings.favorites)
             }
         }
-        .accentColor(.hotPink)
+        .accentColor(.ksuPurple)
     }
     
 }
